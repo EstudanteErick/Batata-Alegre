@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #E9B960;
+}
+
+
+a#a {
+    text-decoration: none; background: #a06800; color: white; border-radius: 25px; text-transform: uppercase; font-size: 20px; font-weight: 700; padding: 10px 35px; margin-top: 30px; margin-left: 75px; display: inline-block; border: 0; transition: all 3s;
+}
+
+h1 {
+    margin-left: 78px;
+    margin-top: -395px;
+    background-color: transparent;
+    color: white;
+    font-family: "Sigmar", serif;
+    text-shadow: 2px 1px 1px black;
+}
+
+img {
+    max-width: 75px;
+    margin-top: -5px;
+}
+
+header {
+    background-color:#E9B960;
+    padding-inline: 16px;
+}
+
+.nav {
+    max-width: 1366px;
+    height: 70px;
+    margin-inline: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 48px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+
+.nav-list a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    padding-block: 16px;
+}
+
+.hero {
+    height: calc(100vh - 70px);
+    background: center / cover no-repeat url("./imagens/computador.png");
+}
+
+.hamburger {
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid white;
+    cursor: pointer;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
+}
+
+@media  (max-width: 767px) {
+
+    a#a {
+        text-decoration: none;
+        background: #a06800;
+        color: white;
+        border-radius: 25px;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 700;
+        padding: 10px 35px;
+        margin-top: 277px;
+        margin-left: 52px;
+        display: inline-block;
+        border: 0;
+        transition: all 3s;
+    }
+
+    h1 {
+        text-align: center;
+        margin-left: 5px;
+        margin-top: -671px;
+        font-size: 25px;
+        background-color: transparent;
+        color: white;
+    }
+
+    .hamburger {
+        display: block;
+        z-index: 1;
+    }
+
+    .nav-list {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #E9B960;
+        clip-path: circle(100px at 90% -15%);
+        transition: 1s ease-out;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        pointer-events: none;
+    }
+
+    .hero {
+        background: center / cover no-repeat url("./imagens/mobile.png");
+    }
+
+    .nav.active .nav-list {
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+    }
+
+    .nav-list a {
+        font-size: 24px;
+        opacity: 0;
+    }
+
+    .nav-list li:nth-child(1) a {
+        transition: 0.5s 0.2s;
+    }
+
+    .nav-list li:nth-child(2) a {
+        transition: 0.5s 0.4s;
+    }
+
+    .nav-list li:nth-child(3) a {
+        transition: 0.5s 0.6s;
+    }
+
+    .nav.active .nav-list a {
+        opacity: 1;
+        
+    }
+
+    .nav.active .hamburger {
+        position: fixed;
+        top: 26px;
+        right: 16px;
+        border-top-color: transparent;
+    }
+
+    .nav.active .hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    .nav.active .hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}
