@@ -9,7 +9,17 @@
 
 
 a#a {
-    text-decoration: none; background: #a06800; color: white; border-radius: 25px; text-transform: uppercase; font-size: 20px; font-weight: 700; padding: 10px 35px; margin-top: 30px; margin-left: 75px; display: inline-block; border: 0; transition: all 3s;
+    text-decoration: none; 
+    background: #a06800; 
+    color: white; 
+    border-radius: 25px; 
+    text-transform: uppercase; 
+    font-size: 20px; 
+    font-weight: 700; 
+    padding: 10px 35px; 
+    margin-top: 30px; margin-left: 75px; 
+    display: inline-block; 
+    border: 0;
 }
 
 h1 {
@@ -21,9 +31,22 @@ h1 {
     text-shadow: 2px 1px 1px black;
 }
 
-img {
+h1#v {
+    text-align: center;
+    font-size: 49px;
+    position: relative;
+    top: -52px;
+    margin-top: -470px;
+}
+
+
+img#a {
     max-width: 75px;
     margin-top: -5px;
+}
+
+img#b {
+    margin-top: 163px;
 }
 
 header {
@@ -63,6 +86,7 @@ header {
     background: center / cover no-repeat url("./imagens/computador.png");
 }
 
+
 .hamburger {
     display: none;
     border: none;
@@ -83,6 +107,117 @@ header {
     transition: 0.3s;
 }
 
+header.a > img {
+    background-color: transparent;
+    top: -154px;
+    left: -5px;
+    position: relative;
+}
+
+header.a {
+    background-color: #ff9e00;
+    padding-top: 169px;
+    margin-left: 1044px;
+    margin-top: -26px;
+    position: relative;
+    left: -973px;
+    top: -13px;
+    border-radius: 14px;
+    box-shadow: 4px -2px 1px #9d712a;
+}
+
+header.a > h2 {
+    background: transparent;
+    color: white;
+    position: relative;
+    top: -145px;
+    margin-top: -20px;
+    text-wrap: nowrap;
+    font-size: 16px;
+    font-family: "Sigmar", serif;
+    text-shadow: 1px 1px 1px black;
+
+}
+
+header.a > p {
+    background: transparent;
+    margin-top: -70px;
+    position: relative;
+    top: -68px;
+    font-family: arial;
+    color: white;
+    text-shadow: 1px 1px 1px #000000c2;
+}
+
+header.a > a {
+    position: relative;
+    top: -11px;
+    left: 1px;
+    text-decoration: none;
+    background: #a06800;
+    color: white;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 11px 37px;
+}
+
+
+header.b {
+    background-color: #ff9e00;
+    padding-top: 15px;
+    margin-left: 1044px;
+    margin-top: -481px;
+    position: relative;
+    left: -530px;
+    top: 41px;
+    border-radius: 14px;
+    box-shadow: 4px -2px 1px #9d712a;
+}
+
+header.b > img {
+    background: transparent;
+    position: relative;
+    top: -55px;
+    left: -6px;
+}
+
+header.b > h2 {
+    position: relative;
+    top: -73px;
+    left: 14px;
+    font-size: 21px;
+    text-shadow: 1px 1px 1px black;
+    background: transparent;
+    margin-top: -34px;
+    color: white;
+    font-family: "Sigmar", serif;
+}
+
+header.b > p {
+    background: transparent;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    position: relative;
+    top: -62px;
+    left: 11px;
+}
+
+header.b > a {
+        position: relative;
+    top: -11px;
+    left: 1px;
+    text-decoration: none;
+    background: #a06800;
+    color: white;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 11px 37px;
+}
+
 @media  (max-width: 767px) {
 
     a#a {
@@ -98,7 +233,6 @@ header {
         margin-left: 52px;
         display: inline-block;
         border: 0;
-        transition: all 3s;
     }
 
     h1 {
@@ -108,6 +242,12 @@ header {
         font-size: 25px;
         background-color: transparent;
         color: white;
+    }
+
+    h1#v {
+        text-align: center;
+        font-size: 49px;
+        margin-top: -719px;
     }
 
     .hamburger {
@@ -178,4 +318,119 @@ header {
         transform: rotate(-135deg);
         top: -7px;
     }
+
+    header.a {
+        background-color: #ff9e00;
+        padding-top: 201px;
+        padding-left: 274px;
+        margin-left: 1010px;
+        position: relative;
+        left: -973px;
+        top: 33px;
+        border-radius: 14px;
+    }
+
+    header.a > img {
+        background-color: transparent;
+        top: -184px;
+        left: -15px;
+        position: relative;
+        margin-left: -255px;
+    }
+
+    header.a > h2 {
+        background: transparent;
+        color: white;
+        position: relative;
+        top: -169px;
+        margin-top: -20px;
+        margin-left: -266px;
+        text-wrap: nowrap;
+        font-size: 16px;
+        font-family: "Sigmar", serif;
+        text-shadow: 1px 1px 1px black;
+    }
+
+    header.a > p {
+        margin-left: -245px;
+        margin-top: -81px;
+        font-size: 17px;
+    }
+
+    header.a > a {
+        position: relative;
+        top: -11px;
+        left: 9px;
+        margin-left: -275px;
+        text-decoration: none;
+        background: #a06800;
+        color: white;
+        border-radius: 25px;
+        text-transform: uppercase;
+        font-size: 22px;
+        font-weight: 700;
+        padding: 11px 37px;
+    }
+
+
+    header.b {
+        background-color: #ff9e00;
+        padding-top: 201px;
+        padding-left: 274px;
+        margin-left: 772px;
+        margin-top: -48px;
+        position: relative;
+        left: -731px;
+        top: 157px;
+        border-radius: 14px;
+    }
+
+    header.b > img {
+        background: transparent;
+        position: relative;
+        top: -195px;
+        left: -25px;
+        margin-left: -256px;
+    }
+
+    header.b > h2 {
+        position: relative;
+        top: -193px;
+        left: -252px;
+        font-size: 21px;
+        text-shadow: 1px 1px 1px black;
+        background: transparent;
+        margin-top: -34px;
+        color: white;
+        font-family: "Sigmar", serif;
+        text-wrap: nowrap;
+    }
+
+    header.b > p {
+    position: relative;
+    top: -73px;
+    left: 6px;
+    font-size: 17px;
+    text-shadow: 1px 1px 1px black;
+    margin-top: -116px;
+    margin-left: -263px;
+    color: white;
+    background: transparent;
+    }
+
+    header.b > a {
+        position: relative;
+        top: -11px;
+        left: 9px;
+        margin-left: -275px;
+        text-decoration: none;
+        background: #a06800;
+        color: white;
+        border-radius: 25px;
+        text-transform: uppercase;
+        font-size: 22px;
+        font-weight: 700;
+        padding: 11px 37px;
+    }
+    
 }
